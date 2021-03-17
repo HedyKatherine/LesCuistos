@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=Playball&display=swap%27');
+@import url('https://fonts.googleapis.com/css2?family=Akaya+Telivigala&display=swap%27');
+body, html {
+  margin: 0;
+  width: 100%;
+}
+/*NAVBAR*/
+.nav {
+    display: flex;
+    justify-content: space-around;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    z-index: 7;
+    width: 100%;
+    align-items: center;
+    background-color: teal;
+    line-height: 70px;
+    }
+.menu {
+    margin: 0 30px 0 0;
+    }
+.menu a {
+    clear: right;
+    text-decoration: none;
+    color: black;
+    margin-left: 50px;
+    line-height: 70px;
+    font-size: 3em;
+    font-family: 'Playball', cursive;
+    transition: 4s;
+    }
+.menu a:hover {
+    background-color: gainsboro;
+    }
+label {
+    margin: 0 40px 0 0;
+    font-size: 26px;
+    line-height: 70px;
+    display: none;
+    width: 26px;
+    float: right;
+    }
+#toggle {
+    display: none;
+    }
+.logo:hover {
+    animation: shake 0.5s;
+    animation-iteration-count: infinite;
+    }
+@keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+    }
+.logo {
+    background-color: white;
+    animation-name: example;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    }
+/* Changement de couleur */
+@keyframes example {
+    from {background-color: white;}
+    to {background-color: teal;}
+    }
+footer{
+      display: flex;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      background-color: teal;
+      }
+  .containerTwo{
+      align-items: center;
+      padding: 20px;
+      width: 35%;
+      }
+  .left-box{
+      width: 45%;
+      padding-top: 50px;
+      }
+  .left-box a{
+      padding-left: 20px;
+      font-size: 3em;
+      color: black;
+      }
+/*moi*/
+.presentation{
+  display: flex;
+  margin-top: 10%;
+  margin-left: 10%;
+}
+.emy{
+  width: 60%;
+  margin-left: 5%;
+  font-family: 'Shippori Mincho B1', serif;
+  font-size: 2.5em;
+  font-weight: 500;
+}
+.photo1{
+  height: 500px;
+  width: 500px;
+  box-shadow: 3px 3px 6px black;
+  border: solid white;
+  border-radius: 75px;
+  }
+.tortilla{
+  height: 700px;
+  width: 700px;
+}
+h1{
+  text-align: center;
+  font-size: 2.5em;
+  font-weight: bold;
+  font-family:'Playball', cursive;
+}
+h2{
+  text-decoration: overline;
+  text-align: center;
+  font-size: 5.5em;
+  font-weight: bold;
+}
+.titre{
+  font-size: 1.75em;
+  font-weight: bold;
+  text-decoration: underline;
+}
+.recetteMateriel{
+  margin-left: 5%%;
+  display: flex;
+  height: 800px;
+  font-family: 'Shippori Mincho B1', serif;
+  font-size: 2em;
+  flex-wrap: wrap;
+  flex-flow: column wrap;
+  flex-direction: row-reverse;
+  justify-content: space-around;
+}
+.realisation{
+  display: flex;
+  height: 1200px;
+  font-family: 'Shippori Mincho B1', serif;
+  font-size: 2em;
+  width: 85%;
+  margin-left: 5%;
+  text-align: justify;
+
+}
+ul li, ol li {
+  font-size: 1.25em;
+}
+
+/* version iphone X... */
+@media only screen and (max-width: 360px)
+  {
+  .nav {
+          text-align: right;
+      }
+  .logo {
+      width: 30%;
+      padding-top: 20px;
+      }
+  label {
+      display: block;
+      cursor: pointer;
+      }
+  .menu {
+      text-align: center;
+      width: 100%;
+      display: none;
+      }
+  .menu a {
+      display: block;
+      border-bottom: 1px solid black;
+      margin: 0;
+      }
+  #toggle:checked + .menu {
+      display: block;
+      }
+  .emy{
+    width: 90%;
+    text-align: center;
+  }
+  .containerTwo{
+    display: none;
+  }
+  h2{
+    font-size: 3em;
+    margin-left: 5%;
+  }
+  .tortilla{
+    width: 70%;
+    height: 300px;
+  }
+  .titre{
+      font-size: 1.3em;
+      margin-left: 5%;
+  }
+  .titre ol{
+    padding-bottom: 40%;
+  }
+}
+/* version ipad*/
+@media only screen and (max-width: 768px) {
+.menu a {
+      margin-left: 10px;
+      font-size: 1.2em;
+      }
+.logo {
+      width: 15%;
+      }
+.presentation{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    /* separer les contener  */
+    justify-content: space-between;
+  }
+.recetteMateriel{
+    margin-left: 5%%;
+    height: 1200px;
+    font-size: 1.5em;
+    padding-bottom: 40%;
+  }
+.realisation{
+  height: 1200px;
+  font-size: 1.5em;
+  padding-bottom: 50%;
+  }
+}
