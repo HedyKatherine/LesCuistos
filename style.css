@@ -1,12 +1,11 @@
 /* Font-family */
 @import url('https://fonts.googleapis.com/css2?family=Playball&display=swap%27');
-
 body, html {
     margin: 0;
     width: 100%;
     }
 p {
-    font-size: 2em;
+    font-size: 1.5em;
     }
 /*NAVBAR*/
 .nav {
@@ -34,7 +33,7 @@ p {
     font-family: 'Playball', cursive;
     transition: 4s;
     }
-.menu a:hover{
+.menu a:hover {
     background-color: gainsboro;
     }
 label {
@@ -112,15 +111,15 @@ h2 {
     }
 .recette {
     display: flex;
-    height: 700x;
-    margin-bottom: 7%; /* article sous le footer */
+    height: 600px;
+    margin-bottom: 6%; /* article sous le footer */
     }
 .ingredient {
     width: 20%;
     padding-left: 2%;
     }
 li {
-    font-size: 1.8em;
+    font-size: 1em;
     line-height: 30px;
     }
 .txt {
@@ -128,7 +127,7 @@ li {
 }
 .titre {
     text-decoration: underline;
-    font-size: 2.2em;
+    font-size: 1.8em;
     }
 /*FOOTER*/
 footer{
@@ -180,7 +179,7 @@ h2 {
 .recette {
     display: flex;
     flex-wrap: wrap;
-    padding-bottom: 20%; /*height*/ 
+    padding-bottom: 85%; /*height*/ 
     }
 .ingredient {
     flex-basis: 30%;
@@ -199,7 +198,7 @@ li {
 {
 .menu a {
     margin-left: 10px;
-    font-size: 1em;
+    font-size: 1.2em;
     }
 .logo {
     width: 15%;
@@ -220,7 +219,7 @@ h2 {
 .recette {
     display: flex;
     flex-wrap: wrap;
-    padding-bottom: 15%; /*height*/ 
+    height: 700px; 
     }
 .ingredient {
     flex-basis: 40%;
@@ -281,7 +280,7 @@ h2 {
     width: 100%;
     }
 .txt {
-    padding-bottom: 30%;
+    padding-bottom: 50%;
     }
 .containerTwo{
     display: none;
