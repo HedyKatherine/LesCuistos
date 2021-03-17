@@ -1,0 +1,298 @@
+/* Font-family */
+@import url('https://fonts.googleapis.com/css2?family=Playball&display=swap%27');
+
+body, html {
+    margin: 0;
+    width: 100%;
+    }
+p {
+    font-size: 2em;
+    }
+/*NAVBAR*/
+.nav {
+    display: flex;
+    justify-content: space-around;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    z-index: 7;
+    width: 100%;
+    align-items: center;
+    background-color: teal;
+    line-height: 70px;
+    }
+.menu {
+    margin: 0 30px 0 0;
+    }
+.menu a {
+    clear: right;
+    text-decoration: none;
+    color: black;
+    margin-left: 50px;
+    line-height: 70px;
+    font-size: 3em;
+    font-family: 'Playball', cursive;
+    transition: 4s;
+    }
+.menu a:hover{
+    background-color: gainsboro;
+    }
+label {
+    margin: 0 40px 0 0;
+    font-size: 26px;
+    line-height: 70px;
+    display: none;
+    width: 26px;
+    float: right;
+    }
+#toggle {
+    display: none;
+    }
+.logo:hover {
+    animation: shake 0.5s;
+    animation-iteration-count: infinite;
+    }
+@keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+    }
+.logo {
+    background-color: white;
+    animation-name: example;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    }
+/* Changement de couleur */
+@keyframes example {
+    from {background-color: white;}
+    to {background-color: teal;}
+    }
+/*PRESENTATION*/
+.presentation {
+    display: flex;
+    margin-top: 120px; /* article sous la navbar */
+    height: 700px;
+    width: 100%;
+    }
+h1 {
+    font-size: 3em;
+    font-family: 'Playball', cursive;
+    }
+.prestxt {
+    margin-left: 2%;
+    }
+.fourneaux {
+    text-align: center;
+    font-size: 1.7em;
+    font-family: 'Playball', cursive;
+    /* animation: shake 0.5s;
+    animation-iteration-count: infinite; */
+    }
+/*RECETTES*/
+h2 {
+    display: flex;
+    align-items: center; /*centrer à la verticale*/
+    justify-content: center; /*centrer à l'horizontale*/
+    font-size: 3em;
+    letter-spacing: 0.5em; /*espacer les lettres*/
+    font-family: 'Playball', cursive;
+    text-decoration: overline;
+    height: 100px;
+    margin: 0; /*enlever le marge haut et bas*/
+    background-color: teal;
+    }
+.recette {
+    display: flex;
+    height: 700x;
+    margin-bottom: 7%; /* article sous le footer */
+    }
+.ingredient {
+    width: 20%;
+    padding-left: 2%;
+    }
+li {
+    font-size: 1.8em;
+    line-height: 30px;
+    }
+.txt {
+    padding-left: 2%;
+}
+.titre {
+    text-decoration: underline;
+    font-size: 2.2em;
+    }
+/*FOOTER*/
+footer{
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: teal; 
+    }
+.containerTwo{
+    align-items: center;
+    padding: 20px;
+    width: 35%;
+    }
+.left-box{
+    width: 45%;
+    padding-top: 50px;
+    }
+.left-box a{
+    padding-left: 20px;
+    font-size: 3em; 
+    color: black;
+    }
+/*VERSION IPAD PRO*/
+@media only screen and (max-width: 1024px)
+{
+.menu a {
+    margin-left: 20px;
+    font-size: 1.5em;
+    }
+.logo {
+    width: 15%;
+}
+.presentation {
+    height: 1150px;
+    }
+p {
+    font-size: 1.6em;
+    }
+.fourneaux {
+    text-align: center;
+    font-size: 1.5em;
+    margin-top: -30px; /*remonter*/ 
+    }
+h2 {
+    font-size: 2.2em;
+    letter-spacing: 0.5em; /*espacer les lettres*/  
+    }
+.recette {
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 20%; /*height*/ 
+    }
+.ingredient {
+    flex-basis: 30%;
+    }
+li {
+    font-size: 1.5em;
+    line-height: 30px;
+    }
+.titre {
+    text-decoration: underline;
+    font-size: 2em;
+    }
+}
+/*VERSION IPAD*/
+@media only screen and (max-width: 768px)
+{
+.menu a {
+    margin-left: 10px;
+    font-size: 1em;
+    }
+.logo {
+    width: 15%;
+    }
+.presentation {
+    height: 1250px;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    }
+.photo {
+    width: 40%;
+    }
+h2 {
+    font-size: 1.6em;
+    letter-spacing: 0.5em; /*espacer les lettres*/     
+    }
+.recette {
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 15%; /*height*/ 
+    }
+.ingredient {
+    flex-basis: 40%;
+    }
+.plat {
+    width: 55%;
+    }
+}
+/*VERSION MOBILE IPHONE X/8/7/6*/
+@media only screen and (max-width: 375px)
+{
+.nav {
+        text-align: right;
+    }
+.logo {
+    width: 30%;
+    padding-top: 20px;
+    }
+label {
+    display: block;
+    cursor: pointer;
+    }
+.menu {
+    text-align: center;
+    width: 100%;
+    display: none;
+    }
+.menu a {
+    display: block;
+    border-bottom: 1px solid black;
+    margin: 0;
+    }
+#toggle:checked + .menu {
+    display: block;
+    }
+.presentation {
+    height: 1300px;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    }
+.photo {
+    display: none;
+    }
+h2 {
+    font-size: 1.8em;
+    letter-spacing: 0em; /*espacer les lettres*/     
+    }
+.recette {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    }
+.ingredient {
+    flex-basis: 80%;
+    }
+.plat {
+    width: 100%;
+    }
+.txt {
+    padding-bottom: 30%;
+    }
+.containerTwo{
+    display: none;
+    }
+.left-box{
+    width: 30%;
+    }
+.left-box a{
+    font-size: 2em;
+    }
+form {
+    margin-top: 30px;
+    }
+}
