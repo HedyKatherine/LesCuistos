@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Playball&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Akaya+Telivigala&display=swap');
+body, html {
+    scroll-behavior: smooth;
+    word-break: break-word;
+    padding: 0;
+    width: 100%;
+    height: 1600px;
+    display: block;
+}
+/* navbar */
+.nav {
+    display: flex;
+    justify-content: space-around;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    z-index: 7;
+    width: 100%;
+    align-items: center;
+    background-color: teal;
+    line-height: 70px;
+    }
+.menu {
+    margin: 0 30px 0 0;
+    }
+.menu a {
+    clear: right;
+    text-decoration: none;
+    color: black;
+    margin-left: 50px;
+    line-height: 70px;
+    font-size: 2em;
+    font-family: 'Playball', cursive;
+    transition: 4s;
+    }
+.menu a:hover{
+    background-color: gainsboro;
+    }
+label {
+    margin: 0 40px 0 0;
+    font-size: 26px;
+    line-height: 70px;
+    display: none;
+    width: 26px;
+    float: right;
+    }
+#toggle {
+    display: none;
+    }
+.logo:hover {
+    animation: shake 0.5s;
+    animation-iteration-count: infinite;
+    }
+@keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+    }
+.logo {
+    background-color: white;
+    animation-name: example;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    }
+/* Changement de couleur */
+@keyframes example {
+    from {background-color: white;}
+    to {background-color: teal;}
+}
+  /* Paralax slider */
+.container-slide{
+      width: 100%;
+      position: relative;
+      overflow-x: hidden;
+}
+.slider{
+      position: relative;
+      width: 500%;
+      animation: animate 15s linear infinite
+}
+.slide{
+      position: relative;
+      height: 700px;
+      float: left;
+      width: 20%;
+      background-size: 100%;
+}
+.slide:nth-child(1){
+    background-image: url("/home/bentaleb/Desktop/Projet_LesCuisto/image/A_Focus-1280x640.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.slide:nth-child(2){
+    background-image: url("/home/bentaleb/Desktop/Projet_LesCuisto/image/1d9ed0a7c662ff8afa3bf1af279c1493004740003000-960.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;  
+}
+.slide:nth-child(3){
+    background-image: url("/home/bentaleb/Desktop/Projet_LesCuisto/image/braini_poule.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;   
+}
+@keyframes animate{
+    0%{
+        left: 0;
+    }
+    20% {
+        left: -100%
+    }
+    30%{
+        left: -100%
+    }
+    50%{
+        left: -200%
+    }
+}
+
+/* Bannière */
+.containerOne{
+    text-align: center;
+    padding-top: 10%;
+}
+/* A propos */
+h1{
+    text-align: center;
+    font-family: 'Playball', cursive;
+}
+p{
+    text-align: justify;
+    width: 50%;
+    margin-left: 25%;
+    font-family: 'Shippori Mincho B1', serif;
+    font-size: 1.7em;
+    line-height: 50px;
+}
+.signature{
+    float:right;
+    padding-bottom: 20%;;
+}
+.containerTwo{
+    align-items: center;
+    padding-top: 30px;
+    width: 35%;
+}
+footer{
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: teal; 
+}
+.left-box{
+    width: 45%;
+    padding-left: 50px;
+    padding-top: 50px;
+}
+.left-box a{
+    padding-left: 20px;
+    font-size: 3em; 
+}
+
+
+
+
+
+
+
+
+
+    

@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Playball&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Akaya+Telivigala&display=swap');
+body, html {
+    scroll-behavior: smooth;
+    padding: 0;
+    width: 100%;
+    display: block;
+}
+/* Navbar */
+.nav {
+    display: flex;
+    justify-content: space-around;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    z-index: 7;
+    width: 100%;
+    align-items: center;
+    background-color: teal;
+    line-height: 70px;
+    }
+.menu {
+    margin: 0 30px 0 0;
+    }
+.menu a {
+    clear: right;
+    text-decoration: none;
+    color: black;
+    margin-left: 50px;
+    line-height: 70px;
+    font-size: 2em;
+    font-family: 'Playball', cursive;
+    transition: 4s;
+    }
+.menu a:hover{
+    background-color: gainsboro;
+    }
+label {
+    margin: 0 40px 0 0;
+    font-size: 26px;
+    line-height: 70px;
+    display: none;
+    width: 26px;
+    float: right;
+    }
+#toggle {
+    display: none;
+    }
+.logo:hover {
+    animation: shake 0.5s;
+    animation-iteration-count: infinite;
+    }
+@keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+    }
+.logo {
+    background-color: white;
+    animation-name: example;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    }
+/* Changement de couleur */
+@keyframes example {
+    from {background-color: white;}
+    to {background-color: teal;}
+    }
+  .Container{
+      display: flex;
+      margin-top: 120px;
+      height: 600px;
+      padding-left: 10%;
+  }
+  .presentation{
+      line-height: 30px;
+      font-family: 'Shippori Mincho B1', serif;
+      font-size: 1.5em;
+      flex-basis: 55%;
+      padding-left: 10%;
+      text-align: justify;
+  }
+  h1{
+      text-align: center;
+      font-family: 'Playball', cursive;
+      font-size: 2em;
+  }
+  /* recipe */
+ 
+  h2{
+      text-align: center;
+      font-family: 'Playball', cursive;
+      font-size: 3em;
+      padding-bottom: 5%;
+  }
+  table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    border: 1px solid #ddd;
+  }
+  
+  th, td {
+    text-align: left;
+    padding: 8px;
+  }
+  tr:nth-child(even){background-color: #f2f2f2}
+
+  .recipe{
+      display: flex;
+      height: 1300px;
+  }
+  ul h4, h5{
+    font-family: 'Playball', cursive;
+    font-size: 1.5em;
+    font-weight: 300;
+    color: teal;
+    transition: 4s;
+  }
+  ul h3{
+    font-family: 'Playball', cursive;
+    font-size: 2em;
+    
+  }
+  ol h3{
+    font-family: 'Playball', cursive;
+    font-size: 1.5em;
+    color: teal;
+    transition: 4s;
+    font-weight: 300;
+  }
+  ul li{
+      line-height: 30px;
+  }
+ 
+  .picture{
+      margin-top: 8%;
+      border: teal 4px solid;
+      border-radius: 30%;
+  }
+  .way{
+      width: 50%;
+  }
+  .enjoy{
+      float: right;
+      color: black
+  }
+/* footer */
+.containerTwo{
+    align-items: center;
+    padding-top: 23px;
+    width: 35%;
+}
+footer{
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: teal; 
+}
+.left-box{
+    width: 45%;
+    padding-left: 50px;
+    padding-top: 50px;
+}
+.left-box a{
+    padding-left: 20px;
+    font-size: 3em; 
+}

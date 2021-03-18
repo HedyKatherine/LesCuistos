@@ -1,0 +1,310 @@
+@media only screen and (max-width: 1024px) {
+    section{
+        padding-bottom: 35%;
+    }
+    .recipe{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .picture{
+        margin-top: 20%;
+        margin-left: 10%;
+    }
+    ul li{ 
+        font-size: 1.5em;
+    }
+    .way{
+        width: 80%;
+        margin-left: 5%;
+        font-size: 1.7em;
+        padding-bottom: 30%;
+    }
+    .logo{
+        width: 100px;
+    }
+
+    .Container{
+        padding-top: 10%;
+    }
+
+    .menu a{
+        font-size: 1.7em;
+        margin-left: 10px;
+    }
+    h2{
+        padding-top: 15%;
+    }
+    ul h4, h5, ol h3{
+        transition: none;
+       }
+}
+/* iPad */
+@media only screen and (max-width: 768px) {
+    .menu a{
+        font-size: 1.4em;
+        margin-left: 10px;
+    }
+    .Container{
+        display: flex;
+        flex-wrap: wrap;
+        height: 800px;
+    }
+    .pic{
+        width: 400px;
+        height: 450px;
+        margin-left: 20%;
+    }
+    .presentation{
+        flex-basis: 95%;
+        padding-left: 1%;  
+    }
+    h2{
+        padding-top: 20%;
+
+    }
+    .recipe{
+        display: flex;
+        flex-wrap: wrap; 
+    }
+    .picture{
+        margin-top: 30%;
+    }
+    .way{
+        width: 80%;
+        margin-left: 5%;
+        padding-bottom: 30%;
+    }
+    ul h4, h5, ol h3{
+        transition: none;
+       }
+}
+/* iPhone X */
+@media only screen and (max-width: 375px){
+    .nav {
+        text-align: right;
+    }
+    .logo {
+    width: 30%;
+    padding-top: 20px;
+    }
+    label {
+    display: block;
+    cursor: pointer;
+    }
+   .menu {
+    text-align: center;
+    width: 100%;
+    display: none;
+    }
+    .menu a {
+    display: block;
+    border-bottom: 1px solid black;
+    margin: 0;
+    }
+    #toggle:checked + .menu {
+    display: block;
+    }
+    .containerOne{
+       display: none;
+    }
+    .pic{
+        width: 250px;
+        height: 350px;
+        margin-left: 5%;
+    }
+    .presentation{
+        flex-basis: 90%;
+        font-size: 15px;
+        padding-bottom: 50%;
+    }
+    h2{
+        font-size: 1.5em;
+        padding-bottom: 5%;
+        padding-top: 20%;
+    }
+    .way{
+        width: 80%;
+        margin-left: 5%;
+        padding-bottom: 80%;
+    }
+    .containerTwo{
+        display: none;
+    }
+    .left-box{
+        width: 30%;
+        }
+    .left-box a{
+        font-size: 2em;
+        }
+    form {
+        margin-top: 30px;
+        }
+    .picture{
+        margin-top: 23%;
+        margin-left: 10%;
+    }
+    ul h4, h5, ol h3{
+       transition: none;
+      }
+    ul li, ol li{
+          text-align: justify;
+      } 
+}
+/*  */
+@media only screen and (max-width: 425px) {
+    .nav {
+    text-align: right;
+    }
+   .logo {
+    width: 30%;
+    padding-top: 20px;
+    }
+    label {
+    display: block;
+    cursor: pointer;
+    }
+    .menu {
+    text-align: center;
+    width: 100%;
+    display: none;
+    }
+    .menu a {
+    display: block;
+    border-bottom: 1px solid black;
+    margin: 0;
+    }
+    #toggle:checked + .menu {
+    display: block;
+    }
+    .containerOne{
+       display: none;
+    }
+    .pic{
+        width: 250px;
+        height: 300px;
+        margin-left: 5%;
+    }
+    .presentation{
+        flex-basis: 90%;
+        font-size: 15px;
+        padding-bottom: 50%;
+    }
+    h2{
+        font-size: 1.5em;
+        padding-bottom: 5%;
+        padding-top: 20%;
+    }
+    .way{
+        width: 80%;
+        margin-left: 5%;
+        padding-bottom: 40%;
+    }
+      
+    .containerTwo{
+        display: none;
+
+    }
+    .left-box{
+        width: 40%;
+        padding-left: 8px;
+        padding-top: 40px;
+    }
+    .left-box a{
+        font-size: 2em; 
+
+    }
+    .picture{
+        margin-top: 23%;
+        margin-left: 10%;
+    }
+    ul h4, h5, ol h3{
+       transition: none;
+      }
+      ul li, ol li{
+          text-align: justify;
+      } 
+}
+/* iPhone 6/7/8 */
+@media only screen and (max-width: 414px) {
+.nav {
+        text-align: right;
+    }
+.logo {
+    width: 30%;
+    padding-top: 20px;
+    }
+label {
+    display: block;
+    cursor: pointer;
+    }
+.menu {
+    text-align: center;
+    width: 100%;
+    display: none;
+    }
+.menu a {
+    display: block;
+    border-bottom: 1px solid black;
+    margin: 0;
+    }
+#toggle:checked + .menu {
+    display: block;
+    }
+    .containerOne{
+       display: none;
+    }
+    .pic{
+        width: 250px;
+        height: 300px;
+        margin-left: 5%;
+    }
+    .presentation{
+        flex-basis: 90%;
+        font-size: 15px;
+        padding-bottom: 50%;
+    }
+    h2{
+        font-size: 1.5em;
+        padding-bottom: 5%;
+        padding-top: 20%;
+    }
+    .way{
+        width: 80%;
+        margin-left: 5%;
+        padding-bottom: 40%;
+    }
+    .picture{
+        margin-top: 23%;
+        margin-left: 10%;
+    }
+    ul h4, h5, ol h3{
+       transition: none;
+      }
+      ul li {
+        text-align: justify;
+        font-size: 1em;
+      } 
+      .way li{
+        text-align: justify;
+        font-size: 0.5em;
+      }
+      .way h3{
+          font-size: 1em;
+      }
+
+      
+    .containerTwo{
+        display: none;
+
+    }
+    .left-box{
+        width: 40%;
+        padding-left: 8px;
+        padding-top: 40px;
+    }
+    .left-box a{
+        font-size: 2em; 
+
+    }
+   
+}
